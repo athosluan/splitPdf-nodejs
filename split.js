@@ -22,20 +22,3 @@ let separarPDF = async (pdf, outputDirectory) => {
 separarPDF(process.argv[2], process.argv[3])
     .then(() =>  console.log('Todos as paginas separados!'))
     .catch(console.error);
-
-
-// const splitPDF = async (pdfFilePath, outputDirectory) => {
-//   console.log(pdfFilePath);
-//   console.log(outputDirectory);
-  
-//   fs.readdir(pdfFilePath, (err, files) => {
-
-//     if(err){
-//       return console.log("Nao foi possivel ler o diretorio"+ pdfFilePath);
-//     }
-
-//     files.forEach(file => {
-//       separarPDF(file, outputDirectory);
-//     })
-//   })  
-// };
